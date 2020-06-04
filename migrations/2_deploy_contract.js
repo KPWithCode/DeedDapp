@@ -5,5 +5,5 @@ const Deed = artifacts.require("Deed");
 module.exports = function(deployer,_network, accounts) {
     // Deployer is the Truffle wrapper for deploying contracts to the network
     // Deploy the contract to the network
-    deployer.deploy(Deed, accounts[0], accounts[1],5, {value: 100});
+    deployer.deploy(Deed, accounts[0], accounts[1],5,{value: 100});
 }
