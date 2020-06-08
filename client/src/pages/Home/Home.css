@@ -1,0 +1,9 @@
+.main-home {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+}
