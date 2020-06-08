@@ -1,23 +1,18 @@
 import React from 'react';
-
-
+import { BrowserRouter  as Router, Switch, Route, BrowserRouter } from 'react-router-dom';
+import Nav from './components/Navigation/Navbar';
+import Home from './pages/Home/Home';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
+    </BrowserRouter>
   );
 }
 
