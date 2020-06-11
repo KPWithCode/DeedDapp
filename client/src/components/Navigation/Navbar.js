@@ -7,7 +7,7 @@ const Nav = props => {
         <div>
             <nav className="main-nav ">
                 <div className="main-nav-logo">
-                    <h1><NavLink to="/">DeedDapp</NavLink></h1>
+                    <h1><NavLink to="/">Deed</NavLink></h1>
                 </div>
                 <nav className="main-nav-items">
                     <ul>
